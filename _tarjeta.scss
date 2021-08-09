@@ -1,0 +1,107 @@
+.contenedorTarjetas {
+  display: flex;
+  flex-wrap: wrap;
+}
+.imagenTarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0px 0px 0px 0px;
+  margin-right: -20%;
+}
+.contenedorTarjetas .cardContenido {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+// Medias querys
+@media only screen and (max-width: 538px) {
+	.contenedorTarjetas .cardContenido {
+		display: flex;
+    flex-direction: column;
+    padding: 2rem;
+	}
+}
+@media only screen and (min-width: 539px){
+	.contenedorTarjetas .cardContenido {
+		display: flex;
+    padding: 2rem;
+	}
+}
+// Botones e imagen
+.botonesTarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  margin: 2rem;
+  padding: 1rem;
+}
+.botonesTarjeta {
+  .btn-outline-primary {
+    background-color: #dee2e6;
+  }
+}
+.botonesTarjeta {
+  .btn:hover {
+    background-color: white;
+    color: black;
+  }
+}
+.movimientoImg {
+  animation: movimiento 2.7s linear infinite;
+}
+
+@keyframes movimiento {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+// Cards
+.cardBasic {
+  border: 1px solid $Basic;
+  .card-header {
+    background-color: white;
+    color: $Basic;
+    font-weight: 900;
+    border: double;
+  }
+}
+.cardGold {
+  border: 1px solid $Gold;
+  .card-header {
+    background-color: white;
+    color: $Gold;
+    font-weight: 900;
+    border: double;
+  }
+}
+.cardPlatinum {
+  border: 1px solid $Platinum;
+  .card-header {
+    background-color: white;
+    color: $Platinum;
+    font-weight: 900;
+    border: double;
+  }
+}
+.card .card-body {
+  background-color: white;
+  color: black;
+}
+.cardContenido .card {
+  width: inherit;
+}
+.contenedorTarjetas h5 {
+  font-family: monospace;
+  font-weight: 600;
+}
+
